@@ -1,22 +1,28 @@
 # demo-cursive-error
 
-A Clojure library designed to ... well, that part is up to you.
+Env to reproduce the issue:
+- macOS 12.4
+- IntelliJ IDEA 2022.1.2 (Ultimate edition)
+- Cursive 1.12.4-2022.1 
 
-## Usage
+## Step to reproduce
 
-FIXME
+- Open project in IDEA
+- Run REPL (run button at toolbar, there should be configuration already)
+- Run `min-test` in REPL
 
-## License
+Expected result:
+  Test should be ok.
 
-Copyright © 2022 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+Actual result:
+```
+Clojure 1.11.1
+nREPL server started on port 52242 on host 127.0.0.1 - nrepl://127.0.0.1:52242
+Loading test/demo_cursive_error/core_test.clj... done
+Running demo-cursive-error.core-test/min-test
+Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
+Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
+Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
+Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
+Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
+```
