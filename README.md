@@ -5,7 +5,7 @@ Env to reproduce the issue:
 - IntelliJ IDEA 2022.1.2 (Ultimate edition)
 - Cursive 1.12.4-2022.1 
 
-## Step to reproduce
+## Steps to reproduce
 
 - Open project in IDEA
 - Run REPL (run button at toolbar, there should be configuration already)
@@ -26,3 +26,6 @@ Error handling response - class java.lang.IllegalArgumentException: Argument for
 Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
 Error handling response - class java.lang.IllegalArgumentException: Argument for @NotNull parameter 'name' of com/intellij/psi/search/FilenameIndex.getVirtualFilesByName must not be null
 ```
+PS I appologize for potentially bad/offensive project name. 
+I called it "cursive-error" just because it appears to me right after upgrading Cursive.
+It can be a bug in Cursive, IDEA or anything else.
