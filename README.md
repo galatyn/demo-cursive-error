@@ -2,7 +2,7 @@
 
 Env to reproduce the issue:
 - macOS 12.4
-- IntelliJ IDEA 2022.1.2 (Ultimate edition)
+- IntelliJ IDEA 2022.1.3 (Ultimate edition)
 - Cursive 1.12.4-2022.1 
 
 ## Steps to reproduce
